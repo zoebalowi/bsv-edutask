@@ -10,7 +10,7 @@ def mock_service():
 @pytest.mark.unit
 def test_get_valid_email(mock_service):
 
-    mock_service.find.return_value = [{'email': 'test@gmail.com'}, {'email': 'test@hotmail.com'}]
+    mock_service.find.return_value = [{'email': 'test@gmail.com'}]
     user_controller = UserController(mock_service)
     result = user_controller.get_user_by_email('test@gmail.com')
     
