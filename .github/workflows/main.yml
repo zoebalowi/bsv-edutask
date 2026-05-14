@@ -2,12 +2,12 @@ name: Backend Unit Tests
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
     paths:
       - "backend/**"
       - ".github/workflows/**"
   push:
-    branches: [ main ]
+    branches: [ master ]
     paths:
       - "backend/**"
       - ".github/workflows/**"
